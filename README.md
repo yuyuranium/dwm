@@ -21,8 +21,8 @@ $ sudo make clean install
 
 ## Applied Patches
 
-* **fullgaps**
-
-* **pertag**
-
-  
+* [**fullgaps**](https://dwm.suckless.org/patches/fullgaps/)
+* [**pertag**](https://dwm.suckless.org/patches/pertag/)
+* [**alwayscenter**](https://dwm.suckless.org/patches/alwayscenter/)
+* [**cool autostart**](https://dwm.suckless.org/patches/cool_autostart/)
+* [**fullscreen**](https://dwm.suckless.org/patches/fullscreen/) 
