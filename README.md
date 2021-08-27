@@ -21,4 +21,8 @@ $ sudo make clean install
 
 ## Applied Patches
 
-* TBD
+* **fullgaps**
+
+* **pertag**
+
+  
