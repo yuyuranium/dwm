@@ -71,6 +71,7 @@ static const char scratchpadname[] = "scratchpad";
 // static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 static const char *scratchpadcmd[] = { "alacritty", "-t", scratchpadname, "-o", "window.dimensions.lines=32", "window.dimensions.columns=128", NULL };
 
+#include "movestack.c"
 static Key keys[] = {
   /* modifier                     key        function        argument */
   { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -102,6 +103,8 @@ static Key keys[] = {
  	{ MODKEY,                       XK_equal,  setgaps,        {.i = +5 } },
  	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = GAP_RESET } },
  	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = GAP_TOGGLE} },
+ 	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+ 	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
   TAGKEYS(                        XK_1,                      0)
   TAGKEYS(                        XK_2,                      1)
   TAGKEYS(                        XK_3,                      2)
