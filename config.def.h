@@ -79,12 +79,14 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "alacritty", "-t", scratchpadname, "-o", "window.dimensions.lines=32", "window.dimensions.columns=128", NULL };
+static const char *rofidruncmd[] = { "rofi_run", "-d", NULL };
 
 #include "movestack.c"
 static Key keys[] = {
   /* modifier                     key        function        argument */
   { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
   { MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+  { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = rofidruncmd } },
   { MODKEY,                       XK_z,      togglescratch,  {.v = scratchpadcmd } },
   { MODKEY,                       XK_b,      togglebar,      {0} },
   { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -99,7 +101,7 @@ static Key keys[] = {
  	{ MODKEY|ShiftMask,             XK_equal,  togglegaps,     { 0 } },
   // { MODKEY,                       XK_Return, zoom,           {0} },
   { MODKEY,                       XK_Tab,    view,           {0} },
-  { ALTKEY,                       XK_q,      killclient,     {0} },
+  { MODKEY,                       XK_q,      killclient,     {0} },
   { MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
   { MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
   { MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
