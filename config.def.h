@@ -10,17 +10,17 @@ static const unsigned int gappiv    = 15;       /* vert inner gap between window
 static const unsigned int gappoh    = 15;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 15;       /* vert outer gap between windows and screen edge */
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
-static const char *fonts[]          = { "CaskaydiaCoveNF:size=12" };
-static const char dmenufont[]       = "CaskaydiaCoveNF:size=12";
-static const char col_gray1[]       = "#2E3440";
-static const char col_gray2[]       = "#434C5E";
-static const char col_gray3[]       = "#D8DEE9";
-static const char col_gray4[]       = "#ECEFF4";
-static const char col_cyan[]        = "#5E81AC";
+static const char *fonts[]          = { "DelugiaMono:size=12" };
+static const char dmenufont[]       = "DelugiaMono:size=12";
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
-  /*               fg         bg         border   */
-  [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-  [SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*               fg         bg         border   */
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
 };
 
 static const char *const autostart[] = {
@@ -30,7 +30,7 @@ static const char *const autostart[] = {
 };
 
 /* tagging */
-static const char *tags[] = { " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 " };
+static const char *tags[] = { " 1", " 2", " 3", " 4", " 5", " 6", " 7", " 8", " 9" };
 
 static const Rule rules[] = {
   /* xprop(1):
