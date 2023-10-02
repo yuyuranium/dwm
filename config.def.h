@@ -11,8 +11,8 @@ static const unsigned int gappov    = 15;       /* vert outer gap between window
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Liga SFMono Nerd Font:size=12", "Apple Color Emoji:size=12" };
-static const char dmenufont[]       = "Liga SFMono Nerd Font:size=12";
+static const char *fonts[]          = { "SFMonoNerdFont:size=12", "Apple Color Emoji:size=12" };
+static const char dmenufont[]       = "SFMonoNerdFont:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
